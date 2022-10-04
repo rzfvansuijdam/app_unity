@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Backdrop
+  - UIButton
+  - UIButton1
+  - UIButton2
+  - UIButton3
+  - UIButton4
+  - UIButton5
   layers:
   - Default
   - TransparentFX

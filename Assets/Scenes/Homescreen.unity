@@ -565,7 +565,7 @@ GameObject:
   - component: {fileID: 952866051}
   m_Layer: 5
   m_Name: Programs
-  m_TagString: Untagged
+  m_TagString: UIButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -833,9 +833,10 @@ GameObject:
   - component: {fileID: 1307226596}
   - component: {fileID: 1307226595}
   - component: {fileID: 1307226594}
+  - component: {fileID: 1307226597}
   m_Layer: 5
   m_Name: extra's
-  m_TagString: Untagged
+  m_TagString: UIButton3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -904,7 +905,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1307226595}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1307226597}
+        m_TargetAssemblyTypeName: next_scene, Assembly-CSharp
+        m_MethodName: ChangeScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1307226595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -943,6 +956,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1307226592}
   m_CullTransparentMesh: 1
+--- !u!114 &1307226597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1307226592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 200113bb26eee2749a744d150d6bfc78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextScene: Music
 --- !u!1 &1312328720
 GameObject:
   m_ObjectHideFlags: 0
@@ -957,7 +983,7 @@ GameObject:
   - component: {fileID: 1312328722}
   m_Layer: 5
   m_Name: dark mode
-  m_TagString: Untagged
+  m_TagString: UIButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1029,7 +1055,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1948737369}
         m_TargetAssemblyTypeName: dark_mode, Assembly-CSharp
-        m_MethodName: ChangeColor
+        m_MethodName: Updatecolor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1442,7 +1468,7 @@ GameObject:
   - component: {fileID: 1885648091}
   m_Layer: 5
   m_Name: Profile
-  m_TagString: Untagged
+  m_TagString: UIButton1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1609,7 +1635,11 @@ MonoBehaviour:
   G: 113
   B: 108
   A: 255
-  Backdrop: {fileID: 1436812642}
+  Backdrop: {fileID: 0}
+  UIButton: {fileID: 0}
+  UIButton1: {fileID: 0}
+  UIButton2: {fileID: 0}
+  UIButton3: {fileID: 0}
 --- !u!4 &1948737370
 Transform:
   m_ObjectHideFlags: 0
@@ -1776,7 +1806,7 @@ GameObject:
   - component: {fileID: 2033481435}
   m_Layer: 5
   m_Name: monitor
-  m_TagString: Untagged
+  m_TagString: UIButton2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1859,7 +1889,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9716981, g: 0.9716981, b: 0.9716981, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

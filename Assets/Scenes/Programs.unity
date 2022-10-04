@@ -428,7 +428,7 @@ GameObject:
   - component: {fileID: 952866051}
   m_Layer: 5
   m_Name: Balance
-  m_TagString: Untagged
+  m_TagString: UIButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -697,7 +697,7 @@ GameObject:
   - component: {fileID: 1307226594}
   m_Layer: 5
   m_Name: Basic
-  m_TagString: Untagged
+  m_TagString: UIButton3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1165,7 +1165,7 @@ GameObject:
   - component: {fileID: 1885648088}
   m_Layer: 5
   m_Name: mindfull
-  m_TagString: Untagged
+  m_TagString: UIButton1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1422,7 +1422,7 @@ GameObject:
   - component: {fileID: 2033481435}
   m_Layer: 5
   m_Name: Sportive
-  m_TagString: Untagged
+  m_TagString: UIButton2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

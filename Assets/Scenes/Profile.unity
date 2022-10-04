@@ -287,19 +287,19 @@ RectTransform:
   m_GameObject: {fileID: 78646968}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0125, y: 0.4414063, z: 1}
+  m_LocalScale: {x: 3.321304, y: 1.4479451, z: 3.2803}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1738725873}
   - {fileID: 373310683}
   - {fileID: 184545765}
   - {fileID: 1463777361}
-  m_Father: {fileID: 1436812641}
-  m_RootOrder: 0
+  m_Father: {fileID: 1088531583}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 178}
+  m_AnchoredPosition: {x: -7.217305, y: 587.8865}
   m_SizeDelta: {x: 389.0797, y: 577.3619}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &78646970
@@ -559,7 +559,7 @@ GameObject:
   - component: {fileID: 353369702}
   m_Layer: 5
   m_Name: Button (1)
-  m_TagString: Untagged
+  m_TagString: UIButton1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -578,7 +578,7 @@ RectTransform:
   m_Children:
   - {fileID: 1205137595}
   m_Father: {fileID: 1088531583}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -917,7 +917,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1088531583}
-  m_RootOrder: 1
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1116,10 +1116,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1436812641}
-  - {fileID: 1034509664}
   - {fileID: 1561868135}
   - {fileID: 353369701}
   - {fileID: 1321346500}
+  - {fileID: 78646969}
+  - {fileID: 1034509664}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1414,7 +1415,7 @@ GameObject:
   - component: {fileID: 1321346501}
   m_Layer: 5
   m_Name: Button (2)
-  m_TagString: Untagged
+  m_TagString: UIButton2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1433,7 +1434,7 @@ RectTransform:
   m_Children:
   - {fileID: 1119531314}
   m_Father: {fileID: 1088531583}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1535,7 +1536,7 @@ GameObject:
   - component: {fileID: 1436812642}
   m_Layer: 5
   m_Name: Image
-  m_TagString: Untagged
+  m_TagString: Backdrop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1551,8 +1552,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3.2803, y: 3.2803, z: 3.2803}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 78646969}
+  m_Children: []
   m_Father: {fileID: 1088531583}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1689,7 +1689,7 @@ GameObject:
   - component: {fileID: 1561868136}
   m_Layer: 5
   m_Name: Button
-  m_TagString: Untagged
+  m_TagString: UIButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1708,7 +1708,7 @@ RectTransform:
   m_Children:
   - {fileID: 44824270}
   m_Father: {fileID: 1088531583}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
