@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class dark_mode : MonoBehaviour
 {
-    public bool IsDarkModeActive;
+  /*  public bool IsDarkModeActive;
 
     public byte R = 71;
 
@@ -18,32 +18,12 @@ public class dark_mode : MonoBehaviour
     public byte A = 255;
 
 
-    public Image Backdrop;
-    public Button UIButton;
-    public Button UIButton1;
-    public Button UIButton2;
-    public Button UIButton3;
-    
+
 
 
     private void Start()
     {
         DontDestroyOnLoad(this.gameObject);
-    }
-
-    public void GetComponents()
-    {
-
-         Backdrop = GameObject.FindGameObjectWithTag("Backdrop").GetComponent<Image>();
-
-         UIButton = GameObject.FindGameObjectWithTag("UIButton").GetComponent<Button>();
-
-         UIButton1 = GameObject.FindGameObjectWithTag("UIButton1").GetComponent<Button>();
-
-         UIButton2 = GameObject.FindGameObjectWithTag("UIButton2").GetComponent<Button>();
-
-         UIButton3 = GameObject.FindGameObjectWithTag("UIButton3").GetComponent<Button>();
-
     }
 
 
@@ -70,23 +50,24 @@ public class dark_mode : MonoBehaviour
         UIButton3.colors = cb3;
 
     }
+ 
 
     public void Updatecolor()
     {
         IsDarkModeActive = true;
     }
 
-
-    public void FixedUpdate()
+    private void SceneManager_sceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (IsDarkModeActive)
+        if (scene.isLoaded)
         {
-            ChangeColor();
+            if (IsDarkModeActive)
+            {
+                ChangeColor();
+            }
+            Debug.Log("Scene Loaded");
+
         }
-        GetComponents();
     }
-
-
-
-
+  */    
 }
