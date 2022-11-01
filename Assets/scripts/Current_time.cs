@@ -3,36 +3,72 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using System;
+using UnityEngine.Audio;
 
 public class Current_time : MonoBehaviour
 {
+    public GameObject agendas;
+    public GameObject stopalarm;
+    public TMP_Dropdown dropdown;
     public TMP_Text TimeText;
     public string Time;
-    public string testtime;
-    public int testtime1 = 1650;
-    // Start is called before the first frame update
+    public int currentHour;
+    public int currentMinute;
+    public int combinedTime;
+    public string displaytime;
+    public int dropdownTime;
+    public AudioSource source;
 
-       public string dateInput = "22:38";    //check this out 
-   public DateTime parsedDate = DateTime.Parse("22:38");
 
-
-    void Start()
+    private void Start()
     {
-        testtime = testtime1.ToString();
+
+        DontDestroyOnLoad(this.gameObject);
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        Time = System.DateTime.Now.ToString("HH:mm");
-        print(testtime);
-        TimeText.text = Time;
-        print(Time);
-        if (Time == testtime)
-        {
-            print("sleepytime");
-        }
-
+        getTime();
+        getClock();
     }
+
+    void getTime()
+    {
+
+        displaytime = DateTime.Now.ToString("HH:mm");
+
+        currentHour = DateTime.Now.Hour;
+
+        currentMinute = DateTime.Now.Minute;
+
+        combinedTime = Convert.ToInt32(currentHour.ToString() + currentMinute.ToString());
+
+        TimeText.text = displaytime;
+    }
+
+    void getClock()
+    {
+        dropdownTime = Convert.ToInt32(dropdown.options[dropdown.value].text.Replace(":", ""));
+
+        print(dropdownTime);
+        print(combinedTime);
+
+        if (dropdownTime == combinedTime)
+        {
+            source.Play();
+            agendas.SetActive(false);
+            stopalarm.SetActive(true);
+        }
+        else
+            return;
+    }
+
+    public void StopMusic()
+    {
+        source.Stop();
+        stopalarm.SetActive(false);
+        agendas.SetActive(true);
+    }
+
 }

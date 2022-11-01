@@ -13,11 +13,6 @@ public class Add_schedule : MonoBehaviour
     int which = 0;
 
 
-    private void Start()
-    {
-
-    }
-
 
     public void GetNewAgenda()
     {
@@ -28,13 +23,8 @@ public class Add_schedule : MonoBehaviour
             NextButtons[i].SetActive(i <= which);
         }
 
-       
-
 
         which++;
-
-        print(which);
-
         startButton.SetActive(false);
 
     }

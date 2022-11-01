@@ -1,4 +1,4 @@
-/*using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
@@ -23,14 +23,8 @@ public class schedule : MonoBehaviour
         agenda_part = schedule;
         PlayerPrefs.SetString("saveNom", schedule);
 
-        for (int i = 0; i < agenda_part.Length; i++)
-        {
-            agenda_part[i].ToString = PlayerPrefs.GetString("Savenom");
-            //  username.text = PlayerPrefs.GetString("saveNom");
-            //  NextButtons[i].SetActive(i <= which);
-        }
+
 
 
     }
 }
-*/
