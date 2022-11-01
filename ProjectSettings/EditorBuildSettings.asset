@@ -6,11 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/LogIN.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
     path: Assets/Scenes/Homescreen.unity
     guid: 8c4e17b8a7709f04cb72a21b8ac12465
+  - enabled: 1
+    path: Assets/Scenes/LogIN.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Programs.unity
     guid: e2104d715cb4cf647b10192d06982f3c
@@ -36,4 +36,4 @@ EditorBuildSettings:
     path: Assets/Scenes/HologramTest.unity
     guid: 6b46f36bd6d39cb4e8fea020b23e7b61
   m_configObjects:
-    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 5cc043186b8271d4a967608ad2157d9e, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 4a2756cd51bfbe64295ecac2e502fa75, type: 2}
