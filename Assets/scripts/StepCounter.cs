@@ -26,8 +26,8 @@ namespace PedometerU
         private void OnStep(int steps, double distance)
         {
             // Display the values // Distance in feet
-            stepText.text = steps.ToString();
-            distanceText.text = (distance * 3.28084).ToString("F2") + " ft";
+            stepText.text = steps.ToString() + " Steps";
+            distanceText.text = (distance).ToString("F2") + " M";
         }
 
         private void OnDisable()
