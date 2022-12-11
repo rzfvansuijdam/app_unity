@@ -35,5 +35,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HologramTest.unity
     guid: 6b46f36bd6d39cb4e8fea020b23e7b61
+  - enabled: 1
+    path: Assets/Scenes/Hologram.unity
+    guid: 26622b9e1ae9b1d439ba2c919a9bca6a
   m_configObjects:
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 0f791a7db1760c444ac303b40c59a7b2, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 4a2756cd51bfbe64295ecac2e502fa75, type: 2}

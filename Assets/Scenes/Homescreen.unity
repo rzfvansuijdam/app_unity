@@ -2193,7 +2193,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   main: {fileID: 0}
   canvas1: {fileID: 0}
-  nextScene: HologramTest
+  nextScene: Hologram
 --- !u!1 &1312328720
 GameObject:
   m_ObjectHideFlags: 0
